@@ -290,7 +290,11 @@ color: var(--primary-text-color);
     justify-content: center;
 
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 400ms, visibility 400ms;
+    /* transition: opacity 400ms, visibility 400ms; */
+    transition-property: opacity,
+    visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal{
